@@ -1,0 +1,39 @@
+.text {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    overflow: hidden;
+}
+
+p{
+    width: 70%;
+    color: #4f4c4c;
+    font-size: 1.2rem;
+    margin: 5vh auto;
+}
+
+.mov-text{
+    position: absolute;
+    height: 60vh;
+    top: 20vh;
+    font-size: 40vh;
+    font-weight: 10;
+    transform:translateX(100%);
+    animation: scroll-left 30s linear infinite;
+    width: fit-content;
+    color: #c1c1c124;
+    animation-timing-function: cubic-bezier(0, 0.32, 1, 1.23);
+}
+
+/* Move it (define the animation) */
+@keyframes scroll-left {
+    from { 
+        transform: translateX(100%); 
+    }
+
+    to { 
+    transform: translateX(-100%); 
+    }
+}

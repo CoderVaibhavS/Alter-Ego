@@ -1,0 +1,68 @@
+.houseCateg{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+}
+
+.categ{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.categ img{
+    /* overflow: hidden; */
+    position: absolute;
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+}
+
+.categText a{
+    color: white;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.categText{
+    width: 100%;
+    z-index: 2;
+    color: white;
+    position: relative;
+    top: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.empty-h{
+    width: 50px;
+    height: 0.5px;
+    margin: auto 0;
+    z-index: 2;
+    position: relative;
+}
+
+#empty-h{
+    height: 100%;
+    animation-duration: 1s;
+    animation-name: fill-h;
+    animation-iteration-count: infinite;
+    z-index: 2;
+    position: relative;
+    background-color: white;
+    width: 50px;
+}
+
+@keyframes fill-h{
+    from{
+        transform: translateX(-100%);
+    }
+
+    to{
+        transform: translate(100%);
+    }
+}
