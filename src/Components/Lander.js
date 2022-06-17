@@ -1,24 +1,38 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import video from '../2891285696.mp4';
 import './Lander.css';
 
 function Lander() {
-    // window.onscroll = function () {
-    //     var div = document.getElementById('bgvideo')
-    //     div.style.height = `${700 - window.scrollY}px`
-    //     div.style.width = '100vw'
-    // }
+    
+    // useEffect(() => {
+    //     let a = window.scrollY;
+    //     let b = -1*a;
+    //     document.addEventListener('onscroll', () => {
+    //         document.querySelector('.on-vid').style.transform = `translateY(${b}px)`;
+    //     })
+    //     console.log(a)
+    //   })
+
     return (
         <>
+        {/* <div className='scroll'> */}
             <div className="lander" id="lander">
                 <div className="on-vid">
                     <img src="https://www.alterego-group.com/img/logo_white.svg" alt="" />
                     <img src="https://www.alterego-group.com/upload/resize_cache/webp/img/main_logo_text_mob.webp" alt="" />
 
                     <div className="bw-imgs" id="bw-imgs">
-                        <div><a href="/">MILAN</a></div>
+                        <div style={{display: 'flex', flexdirection: 'row'}}>
+                            <div style={{width: '30px', height: '1px', backgroundColor: 'white', margin: 'auto'}}></div>
+                            <a href="/" style={{margin: 'auto 10px'}}>MILAN</a>
+                        </div>
+
                         <div className="btn" id="metaverse">METAVERSE</div>
-                        <div><a href="/">MONACO</a></div>
+
+                        <div style={{display: 'flex', flexdirection: 'row'}}>
+                            <a href="/" style={{margin: 'auto 10px'}}>MONACO</a>
+                            <div style={{width: '30px', height: '1px', backgroundColor: 'white', margin: 'auto'}}></div>
+                        </div>
                     </div>
 
                     <img id="awards" src="https://www.alterego-group.com/upload/resize_cache/webp/img/main_logo_awards.webp" alt="" />
@@ -28,7 +42,7 @@ function Lander() {
                     <video id='bgvideo' loop autoPlay muted><source src={video} type="video/mp4" /></video>
                 </div>
             </div>
-            <div style={{height: '1000px'}}></div>
+            {/* </div> */}
         </>
     );
 }

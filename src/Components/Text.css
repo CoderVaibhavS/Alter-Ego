@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: center;    
     overflow: hidden;
+    background-color: white;
 }
 
 p{
@@ -20,6 +21,7 @@ p{
     top: 20vh;
     font-size: 40vh;
     font-weight: 10;
+    white-space: nowrap;
     transform:translateX(100%);
     animation: scroll-left 30s linear infinite;
     width: fit-content;

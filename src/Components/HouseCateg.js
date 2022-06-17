@@ -1,8 +1,16 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './HouseCateg.css';
 
 
 function HouseCateg(props) {
+
+    // useEffect(() => {
+    //   let a = window.scrollY;
+    //   document.querySelector('.houseCateg').addEventListener('onscroll', () => {
+
+    //       document.querySelector('.houseCateg').style.transform = `translateY(${a})`;
+    //   })
+    // })
 
     return(
         <div className="houseCateg">
@@ -13,16 +21,6 @@ function HouseCateg(props) {
                 </div>
                 <img src={props.img} alt="" />
             </div>
-{/* 
-            <div className="categ" id="categ-2">
-                <div className="categText"><a href="/">COUNTRY HOUSES AMD VILLAS</a></div>
-                <img src="https://www.alterego-group.com/upload/resize_cache/webp/img/mp02.webp" alt="" />
-            </div>
-
-            <div className="categ" id="categ-3">
-                <div className="categText"><a href="/">MANSIONS AND ESTATES</a></div>
-                <img src="https://www.alterego-group.com/upload/resize_cache/webp/img/mp03.webp" alt="" />
-            </div> */}
         </div>
     );
 }

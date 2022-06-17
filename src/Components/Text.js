@@ -11,6 +11,7 @@ function Text() {
                 <p>Working professionally in the field of private architecture, creating ‘volume’ beauty, we know exactly when to stop.</p>
             </div>
             <p className="mov-text" id="mov-text">ALTER EGO</p>
+            {/* <marquee className="mov-text" behavior="" direction="">ALTER EGO</marquee> */}
         </div>
     );
 }
